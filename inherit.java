@@ -9,6 +9,12 @@ public class inherit {
             this.age = age;
             this.sex = sex;
         }
+        public Person(String name, int age, String sex){
+            /*it's a must ↑         ↑           ↑ or the output would be null*/
+            this.name = name;
+            this.age = age;
+            this.sex = sex;
+        }
         public void print(){
             System.out.println("{name:"+name+",age:"+age+",sex:"+sex+"}");
         }
@@ -24,6 +30,12 @@ public class inherit {
             /*the sequentential of parameters must be the same.
             If be like (name, age, sex), then there will be mistake*/
         }
+        public Student(int age,String name,String sex){
+            super(name, age, sex);
+            /*this one uses the method of the second Person
+            I wonder if there is a way that I can type the parameters in a casually sequentential
+            */
+        }
     }
     
     public static void main(String args[]){
@@ -36,4 +48,5 @@ public class inherit {
         Axlow.print();
         Paimon.print();
     }
+    /*for now, my understand about "super" is calling method of the current objects' parent class*/
 }
