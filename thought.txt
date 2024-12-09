@@ -1,0 +1,7 @@
+2024/12/09:
+    at 2024/12/06, I learned Overload. Which makes me come up with survey.
+    Normally, a survey has mandatory field and optional field. 
+    And when we didn't fill up the optional field. It will return null.
+    How can I achieve that in java? 
+    if there are totally 4 or more optional field. Must I Overload the function for 15 times?
+    there must be a better way. I'm stucked in a small view.
